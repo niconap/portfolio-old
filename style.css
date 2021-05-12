@@ -18,6 +18,7 @@ nav {
   float: left;
   margin: 1em;
   font-size: 2em;
+  font-weight: bold;
 }
 
 #links {
@@ -40,9 +41,22 @@ nav {
 
 #content {
   text-align: center;
-  padding: 1em;
+  padding: 1.5em;
 }
 
 #avatar {
   width: 20em;
+}
+
+#content h1 {
+  color: rgba(148,158,255,1);
+  font-weight: normal;
+  margin: 1em 0em;
+}
+
+#description {
+  font-size: 1.25em;
+  font-weight: lighter;
+  color: rgb(24, 24, 24);
+  margin: 2em 0em;
 }
