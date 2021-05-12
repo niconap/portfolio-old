@@ -3,15 +3,18 @@
 * {
   margin: auto;
   font-family: Questrial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 nav {
-  max-width: 100%;
+  width: 100%;
   height: 5em;
   display: flex;
   align-items: center;
   overflow: hidden;
   background-color: rgb(250, 250, 250);
+  position: fixed;
+  top: 0px;
 }
 
 #title {
@@ -39,19 +42,20 @@ nav {
   color: white;
 }
 
-#content {
+#home {
   text-align: center;
   padding: 1.5em;
+  margin-top: 5em;
 }
 
 #avatar {
   width: 20em;
 }
 
-#content h1 {
+#home h1 {
   color: rgba(148,158,255,1);
-  font-weight: normal;
   margin: 1em 0em;
+  font-size: 4em;
 }
 
 #description {
@@ -59,4 +63,62 @@ nav {
   font-weight: lighter;
   color: rgb(24, 24, 24);
   margin: 2em 0em;
+}
+
+#socials {
+  background: linear-gradient(90deg, rgba(148,158,255,1) 0%, rgba(89,94,255,1) 100%);
+  width: 20em;
+  height: 5em;
+  border-radius: 30px;
+}
+
+.socialicon {
+  width: 3em;
+  margin: 0em 1em;
+  fill: white;
+  transition: width 0.1s ease;
+}
+
+.socialicon:hover {
+  width: 3.5em;
+  cursor: pointer;
+}
+
+#about {
+  background: linear-gradient(90deg, rgba(148,158,255,1) 0%, rgba(89,94,255,1) 100%);
+  height: 50em;
+  width: 100%;
+  margin-top: 3em;
+  text-align: center;
+  color: white;
+  padding-bottom: 3em;
+}
+
+#abouttitle {
+  font-size: 4em;
+  font-weight: bolder;
+  padding: 1em;
+}
+
+.card {
+  padding: 1em;
+  background-color: white;
+  border-radius: 30px;
+  color: rgb(24, 24, 24);
+  width: 25em;
+  display: inline-block;
+  margin: 0em 2em;
+  box-shadow: rgba(89,94,255,1) 0px 0px 15px;
+}
+
+#line {
+  background-color: rgb(218, 218, 218);
+  margin: 1em 0em;
+  height: 2px;
+  width: 100%;
+}
+
+.cardlogo {
+  width: 8em;
+  height: 8em;
 }
