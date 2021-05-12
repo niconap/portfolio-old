@@ -15,6 +15,7 @@ nav {
   background-color: rgb(250, 250, 250);
   position: fixed;
   top: 0px;
+  opacity: 0.9;
 }
 
 #title {
@@ -35,6 +36,7 @@ nav {
   text-align: center;
   color: #595eff;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 #links a:hover {
@@ -50,10 +52,10 @@ nav {
 
 #avatar {
   width: 20em;
+  margin-bottom: 5em;
 }
 
 #home h1 {
-  color: rgba(148,158,255,1);
   margin: 1em 0em;
   font-size: 4em;
 }
@@ -61,8 +63,9 @@ nav {
 #description {
   font-size: 1.25em;
   font-weight: lighter;
-  color: rgb(24, 24, 24);
-  margin: 2em 0em;
+  color: white;
+  width: 30em;
+  margin: 2em auto;
 }
 
 #socials {
@@ -70,6 +73,7 @@ nav {
   width: 20em;
   height: 5em;
   border-radius: 30px;
+  margin-bottom: 10em;
 }
 
 .socialicon {
@@ -86,15 +90,14 @@ nav {
 
 #about {
   background: linear-gradient(90deg, rgba(148,158,255,1) 0%, rgba(89,94,255,1) 100%);
-  height: 50em;
   width: 100%;
   margin-top: 3em;
   text-align: center;
   color: white;
-  padding-bottom: 3em;
+  padding: 3em 0em 5em 0em;
 }
 
-#abouttitle {
+#abouttitle, #worktitle {
   font-size: 4em;
   font-weight: bolder;
   padding: 1em;
@@ -121,4 +124,14 @@ nav {
 .cardlogo {
   width: 8em;
   height: 8em;
+}
+
+#work {
+  border-radius: 30px;
+  margin-top: -2em;
+  z-index: 1;
+  padding: 3em 0em;
+  text-align: center;
+  background-color: white;
+  box-shadow: rgba(89,94,255,1) 0px -10px 10px;
 }
