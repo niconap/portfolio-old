@@ -40,7 +40,11 @@ nav {
 }
 
 #links a:hover {
-  background: linear-gradient(90deg, rgba(148,158,255,1) 0%, rgba(89,94,255,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(148, 158, 255, 1) 0%,
+    rgba(89, 94, 255, 1) 100%
+  );
   color: white;
 }
 
@@ -60,7 +64,7 @@ nav {
   font-size: 4em;
 }
 
-#description {
+#aboutdescription {
   font-size: 1.25em;
   font-weight: lighter;
   color: white;
@@ -69,7 +73,11 @@ nav {
 }
 
 #socials {
-  background: linear-gradient(90deg, rgba(148,158,255,1) 0%, rgba(89,94,255,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(148, 158, 255, 1) 0%,
+    rgba(89, 94, 255, 1) 100%
+  );
   width: 20em;
   height: 5em;
   border-radius: 30px;
@@ -89,7 +97,11 @@ nav {
 }
 
 #about {
-  background: linear-gradient(90deg, rgba(148,158,255,1) 0%, rgba(89,94,255,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(148, 158, 255, 1) 0%,
+    rgba(89, 94, 255, 1) 100%
+  );
   width: 100%;
   margin-top: 3em;
   text-align: center;
@@ -97,7 +109,8 @@ nav {
   padding: 3em 0em 5em 0em;
 }
 
-#abouttitle, #worktitle {
+#abouttitle,
+#worktitle {
   font-size: 4em;
   font-weight: bolder;
   padding: 1em;
@@ -111,7 +124,7 @@ nav {
   width: 25em;
   display: inline-block;
   margin: 0em 2em;
-  box-shadow: rgba(89,94,255,1) 0px 0px 15px;
+  box-shadow: rgba(89, 94, 255, 1) 0px 0px 15px;
 }
 
 #line {
@@ -133,5 +146,65 @@ nav {
   padding: 3em 0em;
   text-align: center;
   background-color: white;
-  box-shadow: rgba(89,94,255,1) 0px -10px 10px;
+  box-shadow: rgba(89, 94, 255, 1) 0px -10px 10px;
+}
+
+.workdescription {
+  font-size: 1.25em;
+  font-weight: lighter;
+  width: 30em;
+  margin: 2em auto;
+}
+
+a {
+  color: rgba(148, 158, 255, 1);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: rgba(89, 94, 255, 1);
+  text-decoration: underline;
+}
+
+.project {
+  margin: 0em 2em;
+  width: 20em;
+  height: 15em;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 30px;
+  box-shadow: rgb(196, 196, 196) 0px 0px 10px;
+}
+
+.projectlink {
+  color: white;
+}
+
+.projectinfo {
+  color: white;
+  padding: 1em 0em;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(
+    90deg,
+    rgba(148, 158, 255, 1) 0%,
+    rgba(89, 94, 255, 1) 100%
+  );
+}
+
+.projectinfo p {
+  padding: 0em 1em;
+}
+
+.projectimg {
+  width: 100%;
+}
+
+footer {
+  height: 4em;
+  padding-top: 2em;
+  background-color: rgb(250, 250, 250);
+  text-align: center;
+  color: rgb(68, 68, 68);
 }
