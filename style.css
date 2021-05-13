@@ -16,6 +16,7 @@ nav {
   position: fixed;
   top: 0px;
   opacity: 0.9;
+  transition: height 0.2s ease;
 }
 
 #title {
@@ -207,4 +208,83 @@ footer {
   background-color: rgb(250, 250, 250);
   text-align: center;
   color: rgb(68, 68, 68);
+}
+
+nav .icon {
+  display: none;
+}
+
+@media only screen and (max-width: 1280px) {
+  .project {
+    margin-top: 1em;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .nav a {
+    display: none;
+  }
+
+  .nav a.icon {
+    display: block;
+  }
+
+  .nav.small {
+    position: relative;
+  }
+
+  .nav.small a.icon {
+    float: right;
+  }
+
+  .nav.small a {
+    float: none;
+    padding: 0px;
+    display: block;
+    text-align: left;
+  }
+
+  #links a {
+    float: left;
+  }
+
+  #links.nav.small {
+    margin: auto;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav.long {
+    height: 10em;
+  }
+
+  #title:hover #links {
+    display: block;
+  }
+
+  #title.hide {
+    display: none;
+  }
+
+  #title {
+    float: none;
+    margin: auto;
+  }
+
+  #aboutdescription,
+  .workdescription {
+    width: auto;
+    padding: 1em;
+  }
+
+  .project {
+    margin: 1em 0em;
+  }
+
+  #frontend {
+    width: auto;
+    margin: 0em 1em;
+  }
 }
